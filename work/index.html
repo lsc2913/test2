@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="ctx" width="500" height="500"></canvas>
+    <script>
+        window.onload = function () {
+            var aa = document.getElementById('ctx')
+            var context = aa.getContext('2d');
+
+            var max = 300;
+            var n = 0;//每次增加
+            var percent = 0.95;//设定百分比
+            context.lineWidth = '5';
+            context.lineCap = 'round';
+            context.strokeStyle = 'red'
+
+            function fn() {//画圆
+                var timer = setInterval(function() {
+                    if (n >= max*percent) {
+                        clearInterval(timer)
+                    }else{
+                    context.clearRect(0, 0, aa.width, aa.height);//清除画布
+                    context.beginPath();
+                    context.arc(200, 200, 100, Math.PI / 180 * 120, Math.PI / 180 * (120 + n));
+                    context.stroke();
+                    n++
+                    }
+                   addText()
+                }, 10)
+                
+            } fn()
+
+            //加入文字
+            function addText(){
+                context.fillText(Math.floor(n/max*100)+'%', 200, 200,);
+                context.textAlign='center';
+                context.textBaseline='center';
+                context.font='50px sans-serif';
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

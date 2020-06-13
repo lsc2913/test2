@@ -1,0 +1,23 @@
+{
+  "id": "1882623",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3931562",
+      "name": "错误",
+      "font_class": "icon2",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10117123",
+      "name": "确认 正确",
+      "font_class": "querenzhengque",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

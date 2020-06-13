@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>滑动验证</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/init.css">
+</head>
+
+<body>
+	<div id="box">
+		<div class="login">
+			<div class="log">
+				<div class="p1">
+					账号：<input type="text" class="user" placeholder="6~10位">
+					<div class="tf" >
+						
+					</div>
+					
+				</div> 
+				<div class="p2">密码：<input type="text" class="password" placeholder="必须数字字母组合7~12">
+					<div class="tf"></div>
+				</div> 
+				<button class="btn">登录</button>
+			</div>
+			
+		</div>
+		<div class="main" style="display: none;">
+			<div class="content">
+				<div class="leftBox"></div>
+				<div class="rightBox"></div>
+			</div>
+			<div class="slide">
+				<span class="text">请向右拖动滑块完成拼图</span>
+				<div class="moveBox"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
+	<script src="./font/iconfont.js"></script>
+	<script src="./js/animated.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@import './veriable';
+.icon {//矢量字体图标
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+  }
+#box{
+	width: 400px;
+	// background-color: #fff;
+	margin: 50px auto;
+	.login{
+		width: 100%;
+		height: 150px;
+		background-color: #fff;
+		
+		
+		.log{
+			margin-top: 30px;
+			width: 230px;
+			line-height: 50px;
+			margin: 0 auto;
+			.p1,.p2{
+				position: relative;
+				.tf{
+					position: absolute;
+					top: 0;
+					width: 150px;
+				}	
+			}
+			
+			input{
+				outline: none;height: 20px;border-radius: 10px;text-indent: 1em;
+				&::-webkit-input-placeholder{
+					font-size: 5px;
+
+				}
+			}
+			.btn{
+				width: 80px;
+				height: 30px;
+				outline: none;
+				border: none;
+				background: rgb(226, 121, 209);
+				border-radius: 10px;
+				color: #fff;
+				cursor: pointer;
+				margin-left: 80px;
+				
+			}
+		}
+	}
+}
+.main{
+	width: 300px;
+   background: @c;
+   margin: 10px auto;
+   
+   .content{
+	   width: 100%;
+	   height: 300px;
+	   background: url(../images/1.jpg);
+	   position: relative;
+	   .leftBox{
+		   width: 50px;
+		   height: 50px;
+		   background: url(../images/1.jpg);
+		   position: absolute;
+		   
+		//    border: 1px solid #fff;
+		   z-index: 999;
+	   }
+	   .rightBox{
+		   width: 50px;
+		   height: 50px;
+		   position: absolute;
+		   
+		   background: #fff;
+	   }
+   }
+   .slide{
+	   width: 100%;
+	   height: 30px;
+	   background: rgb(174, 212, 228);
+	   margin-top: 10px;
+	   text-align: center;
+	   line-height: 30px;
+	   color: blue;
+	   font-size: 14px;
+	   font-weight: bold;
+	   position: relative;
+	   .moveBox{
+		   width: 50px;
+		   height: 36px;
+		//    box-shadow: 1 1 5 5 #000;
+		   background: red;
+		   border-radius: 10px;
+		   position: absolute;
+		   top: -3px;
+		 
+	   }
+   }
+}
